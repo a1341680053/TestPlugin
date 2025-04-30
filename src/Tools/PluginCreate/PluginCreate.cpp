@@ -28,6 +28,7 @@ void PluginCreate::init()
     ui->setPath_Let->setText(QApplication::applicationDirPath() + "/../" + "src/Plugins");
 
     mTempData = QApplication::applicationDirPath() + "/../" + "data/PluginCreate/";
+    this->setMaximumWidth(400);
 
     connect(ui->setPath_Btn,&QPushButton::clicked,this,&PluginCreate::slotSetPluginPath);
     connect(ui->ok_Btn,&QPushButton::clicked,this,&PluginCreate::slotOkClicked);

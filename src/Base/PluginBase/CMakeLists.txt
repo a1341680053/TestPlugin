@@ -16,6 +16,13 @@ add_library(PluginBase SHARED
     ${H_PluginBase}
 )
 
+# 设置库名称
+set_target_properties(PluginBase PROPERTIES
+    OUTPUT_NAME "PluginBase"
+    DEBUG_POSTFIX ""
+    RELEASE_POSTFIX ""
+)
+
 target_link_libraries(PluginBase PRIVATE
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Widgets

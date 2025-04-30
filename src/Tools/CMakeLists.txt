@@ -1,1 +1,2 @@
 add_subdirectory(PluginCreate)
+add_subdirectory(ToolsLib)
