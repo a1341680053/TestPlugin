@@ -1,2 +1,11 @@
 /.vscode
 /build
+*.exe
+*.dll
+*.so
+*.a
+*.o
+*.ilk
+*.pdb
+*.exp
+*.lib
