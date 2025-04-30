@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plugin>
+        <name>测试</name>
+        <dllName>Test</dllName>
+        <version>1.0.0.0</version>
+        <enabled>true</enabled>
+    </plugin>
+    <plugin>
+        <name>设置</name>
+        <dllName>SettingPlugin</dllName>
+        <version>1.0.0.0</version>
+        <enabled>true</enabled>
+    </plugin>
+</root>
