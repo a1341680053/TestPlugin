@@ -25,9 +25,9 @@ PluginCreate::~PluginCreate()
 
 void PluginCreate::init()
 {
-    ui->setPath_Let->setText(QApplication::applicationDirPath() + "/../../" + "src/Plugins");
+    ui->setPath_Let->setText(QApplication::applicationDirPath() + "/../" + "src/Plugins");
 
-    mTempData = QApplication::applicationDirPath() + "/../../" + "data/PluginCreate/";
+    mTempData = QApplication::applicationDirPath() + "/../" + "data/PluginCreate/";
 
     connect(ui->setPath_Btn,&QPushButton::clicked,this,&PluginCreate::slotSetPluginPath);
     connect(ui->ok_Btn,&QPushButton::clicked,this,&PluginCreate::slotOkClicked);
