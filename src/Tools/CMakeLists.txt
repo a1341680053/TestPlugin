@@ -1,2 +1,3 @@
+add_subdirectory(SystemConfig)
 add_subdirectory(PluginCreate)
 add_subdirectory(ToolsLib)

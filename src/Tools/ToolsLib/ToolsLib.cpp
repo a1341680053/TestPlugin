@@ -1,11 +1,10 @@
-#include "ToolsLib/ToolsLib.h"
+#include "ToolsLib.h"
 #include "gdal.h"
 #include "ogr_api.h"
 #include "ogr_geometry.h"
 #include "gdaljp2abstractdataset.h"
 #include "ogrsf_frmts.h"
-#include <QApplication>
-#include "ToolsLib.h"
+#include "SystemConfig/SystemConfig.h"
 #include <QDebug>
 #include <cerrno>
 #include <thread>
@@ -19,7 +18,7 @@ ToolsLib::ToolsLib(QObject *parent) : QObject(parent)
 
 void ToolsLib::init()
 {
-    mPath = QApplication::applicationDirPath().toStdString() + "/../data/land.shp";
+    mPath = SystemConfig::GetInstance()->getDataPath().toStdString() + "land.shp";
     // Initialize GDAL and OGR
     GDALAllRegister();
     // OGRRegisterAll();

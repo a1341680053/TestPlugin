@@ -1,9 +1,9 @@
 #include "PluginCreate.h"
 #include "ui_PluginCreate.h"
+#include "SystemConfig/SystemConfig.h"
 #include <QFileDialog>
 #include <QDebug>
 #include <QMessageBox>
-#include <QApplication>
 #include <QDir>
 #include <json/json.h>
 #include <iostream>
@@ -25,9 +25,10 @@ PluginCreate::~PluginCreate()
 
 void PluginCreate::init()
 {
-    ui->setPath_Let->setText(QApplication::applicationDirPath() + "/../" + "src/Plugins");
+    
+    ui->setPath_Let->setText(SystemConfig::GetInstance()->getDataPath() + "../" + "src/Plugins");
 
-    mTempData = QApplication::applicationDirPath() + "/../" + "data/PluginCreate/";
+    mTempData = SystemConfig::GetInstance()->getDataPath() + "PluginCreate/";
     this->setMaximumWidth(400);
 
     connect(ui->setPath_Btn,&QPushButton::clicked,this,&PluginCreate::slotSetPluginPath);

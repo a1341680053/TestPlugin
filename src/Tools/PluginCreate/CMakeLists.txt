@@ -33,6 +33,7 @@ target_link_libraries(PluginCreate PRIVATE
 )
 
 target_link_libraries(PluginCreate PRIVATE
+    ${LIB_PATH}/SystemConfig.lib
     ${LIB_PATH}/jsoncpp_static.lib
 )
 

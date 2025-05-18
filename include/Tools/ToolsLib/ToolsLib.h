@@ -4,6 +4,7 @@
 #include <QObject>
 #include <map>
 #include <mutex>
+#include <atomic>
 #include "ToolsLib/ToolsLib_global.h"
 
 // class GDALDataset;

@@ -34,6 +34,7 @@ target_link_libraries(ToolsLib PRIVATE
 )
 
 target_link_libraries(ToolsLib PRIVATE
+    ${LIB_PATH}/SystemConfig.lib
     ${LIB_PATH}/gdal_i.lib
 )
 
